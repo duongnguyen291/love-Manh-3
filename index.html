@@ -103,12 +103,61 @@
         <h2 class="col-xs-12" style="font-family: 'Pattaya', sans-serif; color: #283a44; padding-bottom: 0px;">Cite our love</h2>
     </div>
     <div class="photopile-wrapper col-xs-12 text-center" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
-        <ul class="photopile col-xs-12" id="photopile-content">
-            <!-- Content will be injected here by JavaScript -->
+        <ul class="photopile col-xs-12">
+            <li>
+                <a href="images/p1.jpg">
+                <img src="images/p1.jpg" alt="commemorative photo" />
+                </a>
+            </li>
+            <li>
+                <a href="images/p2.jpg">
+                <img src="images/p2.jpg" alt="commemorative photo" />
+                </a>
+            </li>
+            <li>
+                <a href="images/p3.jpg">
+                <img src="images/p3.jpg" alt="commemorative photo" />
+                </a>
+            </li>
+            <li>
+                <a href="images/p4.jpg">
+                <img src="images/p4.jpg" alt="commemorative photo" />
+                </a>
+            </li>
+            <li>
+                <a href="images/p5.jpg">
+                <img src="images/p5.jpg" alt="commemorative photo" />
+                </a>
+            </li>
+            <li>
+                <a href="images/p6.jpg">
+                <img src="images/p6.jpg" alt="commemorative photo" />
+                </a>
+            </li>
+            <li>
+                <a href="images/p7.jpg">
+                <img src="images/p7.jpg" alt="commemorative photo" />
+                </a>
+            </li>
+            <li>
+                <a href="images/p8.jpg">
+                <img src="images/p8.jpg" alt="commemorative photo" />
+                </a>
+            </li>
+            <li>
+                <a href="images/p9.jpg">
+                <img src="images/p9.jpg" alt="commemorative photo" />
+                </a>
+            </li>
+            <li>
+                <a href="images/p10.jpg">
+                <img src="images/p10.jpg" alt="commemorative photo" />
+                </a>
+            </li>
         </ul>
     </div>
     
-    <p class="text-center" style="font-size: 10px">&copy;HaryPhamDev 2020</p>
+    <p class="text-center" style="font-size: 10px">&copy;Duong Nguyen Love you</p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -174,22 +223,6 @@
                 .fail(function() {
                     console.error("Failed to load JSON file.");
             });
-            $.getJSON('images.json')
-        .done(function(data) {
-            var photopileContent = '';
-            $.each(data, function(index, item) {
-                photopileContent += `
-                    <li>
-                        <a href="${item.src}">
-                            <img src="${item.src}" alt="${item.alt}" />
-                        </a>
-                    </li>`;
-            });
-            $('#photopile-content').html(photopileContent);
-        })
-        .fail(function() {
-            console.error("Failed to load images JSON file.");
-        });
 
         });
     </script>
