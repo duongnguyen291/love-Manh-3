@@ -60,6 +60,14 @@ section {
     background: #ef6a8a;
     color: #FFF;
 }
+.container-head {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các cột */
+    justify-items: space-between; /* Căn giữa các phần tử trong grid */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+
 
 ::-moz-selection {
     background: #ef6a8a;
